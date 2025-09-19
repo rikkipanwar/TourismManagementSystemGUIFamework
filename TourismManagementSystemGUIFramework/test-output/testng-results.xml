@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-09-19T11:31:54 IST" name="Default suite" finished-at="2025-09-19T11:32:07 IST" duration-ms="12868">
+    <groups>
+      <group name="integration">
+        <method signature="UserSignupAndLoginTest.userSignupAndLoginTest()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignupAndLoginTest@7fa98a66]" name="userSignupAndLoginTest" class="com.tekpyramid.tms.userTest.UserSignupAndLoginTest"/>
+      </group> <!-- integration -->
+    </groups>
+    <test started-at="2025-09-19T11:31:54 IST" name="Default test" finished-at="2025-09-19T11:32:07 IST" duration-ms="12868">
+      <class name="com.tekpyramid.tms.userTest.UserSignupAndLoginTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignupAndLoginTest@7fa98a66]" started-at="2025-09-19T11:31:54 IST" name="configBC" finished-at="2025-09-19T11:31:57 IST" duration-ms="3584" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignupAndLoginTest@7fa98a66]" started-at="2025-09-19T11:31:57 IST" name="configBM" finished-at="2025-09-19T11:32:00 IST" duration-ms="2621" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="userSignupAndLoginTest()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignupAndLoginTest@7fa98a66]" started-at="2025-09-19T11:32:00 IST" name="userSignupAndLoginTest" finished-at="2025-09-19T11:32:06 IST" duration-ms="5502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSignupAndLoginTest -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignupAndLoginTest@7fa98a66]" started-at="2025-09-19T11:32:06 IST" name="configAC" finished-at="2025-09-19T11:32:07 IST" duration-ms="1111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.tekpyramid.tms.userTest.UserSignupAndLoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
