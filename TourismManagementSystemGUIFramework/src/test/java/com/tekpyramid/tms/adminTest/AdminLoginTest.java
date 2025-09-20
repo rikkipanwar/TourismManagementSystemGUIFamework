@@ -4,10 +4,13 @@ import java.io.IOException;
 
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.tekpyramid.tms.basetest.BaseClass;
+import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.objectrepositoryutility.AdminDashboardPage;
 import com.tekpyramid.tms.objectrepositoryutility.AdminLoginPage;
 import com.tekpyramid.tms.objectrepositoryutility.HomePage;
+
 
 public class AdminLoginTest  extends BaseClass{
 	
@@ -25,9 +28,9 @@ public class AdminLoginTest  extends BaseClass{
 		AdminDashboardPage adp = new AdminDashboardPage(driver);
 		String header = adp.getHeaderAdmin().getText();
 		if(header.contains(actHead)) {
-			System.out.println("Admistrator dashborad is displayed");
+			UtilityClassObject.getTest().log(Status.PASS, "Admistrator dashborad is displayed");
 		}else {
-			System.out.println("Admistrator dashborad is not displayed");
+			UtilityClassObject.getTest().log(Status.FAIL, "Admistrator dashborad not is displayed");
 			
 		}
 		adp.logoutAdmin();

@@ -6,7 +6,9 @@ import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.tekpyramid.tms.basetest.BaseClass;
+import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.objectrepositoryutility.EnquiryPage;
 import com.tekpyramid.tms.objectrepositoryutility.HomePage;
 
@@ -30,9 +32,9 @@ public class CreateEnquiryTest extends BaseClass {
 		
 		String headerVerify = driver.findElement(By.xpath("//div[text()=':Enquiry  Successfully submited ']")).getText();
 		if(headerVerify.contains("Enquiry  Successfully")) {
-			System.out.println("Enquiry has been successfully created");
+			UtilityClassObject.getTest().log(Status.PASS, "Enquiry is successfully created");
 		} else {
-			System.out.println("Enquiry has not been successfully created");
+			UtilityClassObject.getTest().log(Status.FAIL, "Enquiry is not successfully created");
 		}
 	}
 

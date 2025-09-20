@@ -7,7 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.tekpyramid.tms.basetest.BaseClass;
+import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.objectrepositoryutility.HomePage;
 import com.tekpyramid.tms.objectrepositoryutility.SignUpPage;
 
@@ -30,9 +32,9 @@ public class UserSignUpTest extends BaseClass {
 		wLib.waitForElementPresent(driver, info);
 		String confirmMsg = info.getText();
 		if(confirmMsg.contains("successful")) {
-			System.out.println("New user is created");
+			UtilityClassObject.getTest().log(Status.PASS, "New user is successfully created");
 		}else {
-			System.out.println("New User is not created");
+			UtilityClassObject.getTest().log(Status.FAIL, "New user is not successfully created");
 		}
 	}
 

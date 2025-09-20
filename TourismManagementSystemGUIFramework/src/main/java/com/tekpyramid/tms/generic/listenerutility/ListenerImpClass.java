@@ -1,9 +1,7 @@
 package com.tekpyramid.tms.generic.listenerutility;
 
-import java.io.File;
 import java.util.Date;
 
-import org.apache.commons.io.FileUtils;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ISuite;
@@ -13,6 +11,7 @@ import org.testng.ITestResult;
 
 import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
+import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentSparkReporter;
 import com.aventstack.extentreports.reporter.configuration.Theme;
 import com.tekpyramid.tms.basetest.BaseClass;
@@ -43,14 +42,14 @@ public class ListenerImpClass implements ISuiteListener, ITestListener {
 	}
 	
 	public void onTestStart(ITestResult result) {
-		System.out.println("===" + result.getMethod().getMethodName() + " started===");
 		test = report.createTest(result.getMethod().getMethodName());
 		UtilityClassObject.setTest(test);
+		test.log(Status.INFO, result.getMethod().getMethodName() + "===STARTED===");
 		
 	}
 	
 	public void onTestSuccess(ITestResult result) {
-		System.out.println("===" + result.getMethod().getMethodName() + " success===");
+		test.log(Status.INFO, result.getMethod().getMethodName() + "===SUCCESS===");
 	}
 	
 	public void onTestFailure(ITestResult result) {
@@ -59,13 +58,9 @@ public class ListenerImpClass implements ISuiteListener, ITestListener {
 		
 		String time = new Date().toString().replace(" ", "_").replace(":", "_");
 		
-		File srcFile = ts.getScreenshotAs(OutputType.FILE);
-		try {
-			File desFile = new File("./screenshot/"+testName+" " + time+".png");
-			FileUtils.copyFile(srcFile, desFile);
-		} catch(Exception e) {
-			e.printStackTrace();
-		}
+		String srcFile = ts.getScreenshotAs(OutputType.BASE64);
+			test.addScreenCaptureFromPath(srcFile, testName+"_" + time);
+			test.log(Status.INFO, result.getMethod().getMethodName() + "===FAILED===");
 	}
 	
 

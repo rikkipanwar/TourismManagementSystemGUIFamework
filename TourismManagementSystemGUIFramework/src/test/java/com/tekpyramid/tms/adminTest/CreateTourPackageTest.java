@@ -5,7 +5,9 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.tekpyramid.tms.basetest.BaseClass;
+import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.objectrepositoryutility.AdminDashboardPage;
 import com.tekpyramid.tms.objectrepositoryutility.AdminLoginPage;
 import com.tekpyramid.tms.objectrepositoryutility.CreatePackagePage;
@@ -41,9 +43,9 @@ public class CreateTourPackageTest extends BaseClass{
 		
 		String header = driver.findElement(By.xpath("//div[@class='succWrap']")).getText();
 		if(header.contains("Package Created Successfully")) {
-			System.out.println("Package is successfully created");
+			UtilityClassObject.getTest().log(Status.PASS, "Package is successfully created");
 		} else {
-			System.out.println("Package is not successfully created");
+			UtilityClassObject.getTest().log(Status.FAIL, "Package is not successfully created");
 		}
 		
 		adp.logoutAdmin();

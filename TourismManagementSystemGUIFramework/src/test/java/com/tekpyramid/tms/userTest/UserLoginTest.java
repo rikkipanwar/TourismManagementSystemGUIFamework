@@ -5,7 +5,9 @@ import java.io.IOException;
 import org.openqa.selenium.By;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.tekpyramid.tms.basetest.BaseClass;
+import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.objectrepositoryutility.HomePage;
 import com.tekpyramid.tms.objectrepositoryutility.SignInPage;
 import com.tekpyramid.tms.objectrepositoryutility.UserHomePage;
@@ -24,9 +26,9 @@ public class UserLoginTest  extends BaseClass{
 		
 		String header = driver.findElement(By.xpath("//li[@class='sig']")).getText();
 		if(header.contains(USERNAME)) {
-			System.out.println(" User is login");
+			UtilityClassObject.getTest().log(Status.PASS, "User is logged In");
 		}else {
-			System.out.println("User is not login");
+			UtilityClassObject.getTest().log(Status.FAIL, "User is not logged In");
 			
 		}
 		

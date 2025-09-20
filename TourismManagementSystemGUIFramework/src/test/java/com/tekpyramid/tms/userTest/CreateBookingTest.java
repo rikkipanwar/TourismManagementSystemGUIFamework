@@ -7,7 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.tekpyramid.tms.basetest.BaseClass;
+import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.objectrepositoryutility.HomePage;
 import com.tekpyramid.tms.objectrepositoryutility.PackageDetailsPage;
 import com.tekpyramid.tms.objectrepositoryutility.SignInPage;
@@ -42,9 +44,9 @@ public class CreateBookingTest extends BaseClass {
 		
 		String header = driver.findElement(By.xpath("//div[@class='succWrap']")).getText();
 		if(header.contains("Booked Successfully")) {
-			System.out.println("Booking is successfully created");
+			UtilityClassObject.getTest().log(Status.PASS, "Booking is successfully created");
 		} else {
-			System.out.println("Booking is not successfully created");
+			UtilityClassObject.getTest().log(Status.FAIL, "Booking is not successfully created");
 		}
 		
 		uhp.getLogoutLnk().click();

@@ -6,7 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.tekpyramid.tms.basetest.BaseClass;
+import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.objectrepositoryutility.AdminDashboardPage;
 import com.tekpyramid.tms.objectrepositoryutility.AdminLoginPage;
 import com.tekpyramid.tms.objectrepositoryutility.HomePage;
@@ -41,9 +43,9 @@ public class ManageTourPackageTest extends BaseClass{
 		
 		String header = driver.findElement(By.xpath("//div[@class='succWrap']")).getText();
 		if(header.contains("Package Updated")) {
-			System.out.println("Package is updated successfully created");
+			UtilityClassObject.getTest().log(Status.PASS, "Package is updated successfully");
 		} else {
-			System.out.println("Package is not updated successfully created");
+			UtilityClassObject.getTest().log(Status.FAIL, "Package is not updated successfully");
 		}
 		
 		adp.logoutAdmin();

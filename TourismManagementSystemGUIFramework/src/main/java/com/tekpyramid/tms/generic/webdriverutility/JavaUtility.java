@@ -9,8 +9,19 @@ public class JavaUtility {
 
 	public int getRandomNumber() {
 		Random random = new Random();
-		int randomNum = random.nextInt(1000);
+		int randomNum = random.nextInt(5000);
 		return randomNum;
+	}
+	
+	public StringBuilder getAlphaNumericRandomDate() {
+		int n = 20;
+		String alphaNumericString = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789abcdefghijklmnopqrstuvwxyz";
+		StringBuilder sb = new StringBuilder(n);
+		for(int i=0; i<n; i++) {
+			int index = (int) (alphaNumericString.length()*Math.random());
+			sb.append(alphaNumericString.charAt(index));
+		}
+		return sb;
 	}
 
 	public String captureTimeStamp() {

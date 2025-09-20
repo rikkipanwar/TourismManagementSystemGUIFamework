@@ -7,7 +7,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Test;
 
+import com.aventstack.extentreports.Status;
 import com.tekpyramid.tms.basetest.BaseClass;
+import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.objectrepositoryutility.HomePage;
 import com.tekpyramid.tms.objectrepositoryutility.SignInPage;
 import com.tekpyramid.tms.objectrepositoryutility.SignUpPage;
@@ -32,9 +34,9 @@ public class UserSignupAndLoginTest extends BaseClass {
 		wLib.waitForElementPresent(driver, info);
 		String confirmMsg = info.getText();
 		if(confirmMsg.contains("successful")) {
-			System.out.println("New user is created");
+			UtilityClassObject.getTest().log(Status.PASS, "New user is successfully created");
 		}else {
-			System.out.println("New User is not created");
+			UtilityClassObject.getTest().log(Status.FAIL, "New user is not successfully created");
 		}
 		
 
@@ -46,9 +48,9 @@ public class UserSignupAndLoginTest extends BaseClass {
 		
 		String header = driver.findElement(By.xpath("//li[@class='sig']")).getText();
 		if(header.contains(EMAIL)) {
-			System.out.println(" User is login");
+			UtilityClassObject.getTest().log(Status.PASS, "New user is logged In");
 		}else {
-			System.out.println("User is not login");
+			UtilityClassObject.getTest().log(Status.FAIL, "New user is not logged In");
 			
 		}
 		

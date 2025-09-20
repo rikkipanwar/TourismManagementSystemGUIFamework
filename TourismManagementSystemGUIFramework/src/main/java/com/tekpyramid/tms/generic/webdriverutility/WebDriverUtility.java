@@ -1,6 +1,8 @@
 package com.tekpyramid.tms.generic.webdriverutility;
 
 import java.time.Duration;
+import java.util.Iterator;
+import java.util.Set;
 
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.Keys;
@@ -51,6 +53,52 @@ public class WebDriverUtility {
 	public void selectDropdownByIndex(WebElement element, int index) {
 		Select sel = new Select(element);
 		sel.selectByIndex(index);
+	}
+	
+	public void switchToTabByURL(WebDriver driver, String partialURL) {
+		Set<String> allIDs = driver.getWindowHandles();
+		for(String id : allIDs) {
+			driver.switchTo().window(id);
+			String actualURL = driver.getCurrentUrl();
+			if(actualURL.contains(partialURL)) {
+				break;
+			}
+		}
+	}
+	
+	public void switchToTabByTitle(WebDriver driver, String partialTitle) {
+		Set<String> set = driver.getWindowHandles();
+		Iterator<String> it = set.iterator();
+		while(it.hasNext()){
+			String windowID = it.next();
+			driver.switchTo().window(windowID);
+			String actualTitle = driver.getCurrentUrl();
+			if(actualTitle.contains(partialTitle)) {
+				break;
+			}
+		}
+	}
+	
+	public void switchToFrame(WebDriver driver, int index) {
+		driver.switchTo().frame(index);
+	}
+	
+	public void switchToFrame(WebDriver driver, String nameID) {
+		driver.switchTo().frame(nameID);
+	}
+	
+	public void switchToFrame(WebDriver driver, WebElement element) {
+		driver.switchTo().frame(element);
+	}
+	
+	public void mouseHover(WebDriver driver, WebElement element) {
+		Actions act = new Actions(driver);
+		act.moveToElement(element).perform();
+	}
+	
+	public void doubleClick(WebDriver driver, WebElement element) {
+		Actions act = new Actions(driver);
+		act.doubleClick(element).perform();
 	}
 
 }
