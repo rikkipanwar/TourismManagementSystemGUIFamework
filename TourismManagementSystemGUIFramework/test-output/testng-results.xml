@@ -1,44 +1,600 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results retried="7" ignored="2" total="16" passed="6" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-09-20T23:46:10 IST" name="Default suite" finished-at="2025-09-20T23:46:20 IST" duration-ms="10187">
+  <suite started-at="2025-09-21T23:45:11 IST" name="Suite" finished-at="2025-09-21T23:47:57 IST" duration-ms="165976">
     <groups>
       <group name="smoke">
-        <method signature="AdminLoginTest.adminLoginTest()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@6356695f]" name="adminLoginTest" class="com.tekpyramid.tms.adminTest.AdminLoginTest"/>
+        <method signature="AdminLoginTest.adminLoginTest()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@5c5eefef]" name="adminLoginTest" class="com.tekpyramid.tms.adminTest.AdminLoginTest"/>
+        <method signature="CreateTourPackageTest.createTourPackageTest()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" name="createTourPackageTest" class="com.tekpyramid.tms.adminTest.CreateTourPackageTest"/>
+        <method signature="ManageTourPackageTest.createTourPackageTest()[pri:0, instance:com.tekpyramid.tms.adminTest.ManageTourPackageTest@222545dc]" name="createTourPackageTest" class="com.tekpyramid.tms.adminTest.ManageTourPackageTest"/>
+        <method signature="CreateBookingTest.createBookingTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateBookingTest@2d7275fc]" name="createBookingTest" class="com.tekpyramid.tms.userTest.CreateBookingTest"/>
+        <method signature="CreateEnquiryTest.createEnquiryTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" name="createEnquiryTest" class="com.tekpyramid.tms.userTest.CreateEnquiryTest"/>
+        <method signature="UserLoginTest.userLoginTest()[pri:0, instance:com.tekpyramid.tms.userTest.UserLoginTest@72d1ad2e]" name="userLoginTest" class="com.tekpyramid.tms.userTest.UserLoginTest"/>
+        <method signature="UserSignUpTest.userSignUpTest()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignUpTest@5158b42f]" name="userSignUpTest" class="com.tekpyramid.tms.userTest.UserSignUpTest"/>
       </group> <!-- smoke -->
     </groups>
-    <test started-at="2025-09-20T23:46:10 IST" name="Default test" finished-at="2025-09-20T23:46:20 IST" duration-ms="10187">
-      <class name="com.tekpyramid.tms.adminTest.AdminLoginTest">
-        <test-method is-config="true" signature="configBS()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@6356695f]" started-at="2025-09-20T23:46:10 IST" name="configBS" finished-at="2025-09-20T23:46:10 IST" duration-ms="12" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- configBS -->
-        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@6356695f]" started-at="2025-09-20T23:46:10 IST" name="configBC" finished-at="2025-09-20T23:46:13 IST" duration-ms="3735" status="PASS">
+    <test started-at="2025-09-21T23:45:11 IST" name="Test" finished-at="2025-09-21T23:47:57 IST" duration-ms="165976">
+      <class name="com.tekpyramid.tms.userTest.UserLoginTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.userTest.UserLoginTest@72d1ad2e]" started-at="2025-09-21T23:47:23 IST" name="configBC" finished-at="2025-09-21T23:47:27 IST" duration-ms="3420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBC -->
-        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@6356695f]" started-at="2025-09-20T23:46:13 IST" name="configBM" finished-at="2025-09-20T23:46:16 IST" duration-ms="2152" status="PASS">
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.UserLoginTest@72d1ad2e]" started-at="2025-09-21T23:47:27 IST" name="configBM" finished-at="2025-09-21T23:47:30 IST" duration-ms="3715" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configBM -->
-        <test-method signature="adminLoginTest()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@6356695f]" started-at="2025-09-20T23:46:16 IST" name="adminLoginTest" finished-at="2025-09-20T23:46:18 IST" duration-ms="2763" status="PASS">
+        <test-method signature="userLoginTest()[pri:0, instance:com.tekpyramid.tms.userTest.UserLoginTest@72d1ad2e]" started-at="2025-09-21T23:47:30 IST" name="userLoginTest" finished-at="2025-09-21T23:47:40 IST" duration-ms="9155" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- adminLoginTest -->
-        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@6356695f]" started-at="2025-09-20T23:46:18 IST" name="configAM" finished-at="2025-09-20T23:46:18 IST" duration-ms="1" status="PASS">
+        </test-method> <!-- userLoginTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.UserLoginTest@72d1ad2e]" started-at="2025-09-21T23:47:40 IST" name="configAM" finished-at="2025-09-21T23:47:40 IST" duration-ms="1" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAM -->
-        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@6356695f]" started-at="2025-09-20T23:46:18 IST" name="configAC" finished-at="2025-09-20T23:46:20 IST" duration-ms="1473" status="PASS">
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.userTest.UserLoginTest@72d1ad2e]" started-at="2025-09-21T23:47:40 IST" name="configAC" finished-at="2025-09-21T23:47:41 IST" duration-ms="1306" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAC -->
-        <test-method is-config="true" signature="configAS()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@6356695f]" started-at="2025-09-20T23:46:20 IST" name="configAS" finished-at="2025-09-20T23:46:20 IST" duration-ms="0" status="PASS">
+      </class> <!-- com.tekpyramid.tms.userTest.UserLoginTest -->
+      <class name="com.tekpyramid.tms.adminTest.AdminLoginTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@5c5eefef]" started-at="2025-09-21T23:46:41 IST" name="configBC" finished-at="2025-09-21T23:46:44 IST" duration-ms="3430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@5c5eefef]" started-at="2025-09-21T23:46:44 IST" name="configBM" finished-at="2025-09-21T23:46:48 IST" duration-ms="3273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="adminLoginTest()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@5c5eefef]" started-at="2025-09-21T23:46:48 IST" name="adminLoginTest" finished-at="2025-09-21T23:46:54 IST" duration-ms="6720" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- adminLoginTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@5c5eefef]" started-at="2025-09-21T23:46:54 IST" name="configAM" finished-at="2025-09-21T23:46:54 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.adminTest.AdminLoginTest@5c5eefef]" started-at="2025-09-21T23:46:54 IST" name="configAC" finished-at="2025-09-21T23:46:56 IST" duration-ms="1189" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.tekpyramid.tms.adminTest.AdminLoginTest -->
+      <class name="com.tekpyramid.tms.adminTest.CreateTourPackageTest">
+        <test-method is-config="true" signature="configBS()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:45:11 IST" name="configBS" finished-at="2025-09-21T23:45:11 IST" duration-ms="11" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBS -->
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:45:11 IST" name="configBC" finished-at="2025-09-21T23:45:15 IST" duration-ms="3812" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:45:15 IST" name="configBM" finished-at="2025-09-21T23:45:26 IST" duration-ms="11206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method retried="true" signature="createTourPackageTest()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:45:26 IST" name="createTourPackageTest" finished-at="2025-09-21T23:45:53 IST" duration-ms="26976" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (223f4db2-2dc9-488d-9b5d-2a4511448a1e)] -> xpath: //div/button[@name='submit']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.1, moz:accessibilityChecks: false, moz:buildID: 20250918214338, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24080, moz:profile: C:\Users\panwa\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 223f4db2-2dc9-488d-9b5d-2a4511448a1e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (223f4db2-2dc9-488d-9b5d-2a4511448a1e)] -> xpath: //div/button[@name='submit']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.1, moz:accessibilityChecks: false, moz:buildID: 20250918214338, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24080, moz:profile: C:\Users\panwa\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 223f4db2-2dc9-488d-9b5d-2a4511448a1e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.tekpyramid.tms.generic.webdriverutility.WebDriverUtility.waitForElementClickable(WebDriverUtility.java:30)
+at com.tekpyramid.tms.objectrepositoryutility.CreatePackagePage.createNewPackage(CreatePackagePage.java:81)
+at com.tekpyramid.tms.adminTest.CreateTourPackageTest.createTourPackageTest(CreateTourPackageTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTourPackageTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:45:53 IST" name="configAM" finished-at="2025-09-21T23:45:53 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:45:53 IST" name="configBM" finished-at="2025-09-21T23:45:54 IST" duration-ms="1009" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method retried="true" signature="createTourPackageTest()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:45:54 IST" name="createTourPackageTest" finished-at="2025-09-21T23:46:17 IST" duration-ms="22267" status="SKIP">
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (223f4db2-2dc9-488d-9b5d-2a4511448a1e)] -> xpath: //div/button[@name='submit']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.1, moz:accessibilityChecks: false, moz:buildID: 20250918214338, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24080, moz:profile: C:\Users\panwa\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 223f4db2-2dc9-488d-9b5d-2a4511448a1e]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for element to be clickable: [[FirefoxDriver: firefox on windows (223f4db2-2dc9-488d-9b5d-2a4511448a1e)] -> xpath: //div/button[@name='submit']] (tried for 20 second(s) with 500 milliseconds interval)
+Build info: version: '4.35.0', revision: '1c58e5028b'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '25'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 143.0.1, moz:accessibilityChecks: false, moz:buildID: 20250918214338, moz:geckodriverVersion: 0.36.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 24080, moz:profile: C:\Users\panwa\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
+Session ID: 223f4db2-2dc9-488d-9b5d-2a4511448a1e
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:228)
+at com.tekpyramid.tms.generic.webdriverutility.WebDriverUtility.waitForElementClickable(WebDriverUtility.java:30)
+at com.tekpyramid.tms.objectrepositoryutility.CreatePackagePage.createNewPackage(CreatePackagePage.java:81)
+at com.tekpyramid.tms.adminTest.CreateTourPackageTest.createTourPackageTest(CreateTourPackageTest.java:45)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTourPackageTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:46:17 IST" name="configAM" finished-at="2025-09-21T23:46:17 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:46:17 IST" name="configBM" finished-at="2025-09-21T23:46:17 IST" duration-ms="548" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createTourPackageTest()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:46:17 IST" name="createTourPackageTest" finished-at="2025-09-21T23:46:26 IST" duration-ms="8502" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTourPackageTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:46:26 IST" name="configAM" finished-at="2025-09-21T23:46:26 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:46:26 IST" name="configAC" finished-at="2025-09-21T23:46:27 IST" duration-ms="1256" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+        <test-method is-config="true" signature="configAS()[pri:0, instance:com.tekpyramid.tms.adminTest.CreateTourPackageTest@515aebb0]" started-at="2025-09-21T23:47:57 IST" name="configAS" finished-at="2025-09-21T23:47:57 IST" duration-ms="0" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- configAS -->
-      </class> <!-- com.tekpyramid.tms.adminTest.AdminLoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+      </class> <!-- com.tekpyramid.tms.adminTest.CreateTourPackageTest -->
+      <class name="com.tekpyramid.tms.userTest.CreateEnquiryTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:46:56 IST" name="configBC" finished-at="2025-09-21T23:46:59 IST" duration-ms="3323" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:46:59 IST" name="configBM" finished-at="2025-09-21T23:47:02 IST" duration-ms="3281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method retried="true" signature="createEnquiryTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:02 IST" name="createEnquiryTest" finished-at="2025-09-21T23:47:03 IST" duration-ms="906" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Enquiry is not successfully created expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Enquiry is not successfully created expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tekpyramid.tms.userTest.CreateEnquiryTest.createEnquiryTest(CreateEnquiryTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEnquiryTest -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:03 IST" name="configBM" finished-at="2025-09-21T23:47:04 IST" duration-ms="470" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:03 IST" name="configAM" finished-at="2025-09-21T23:47:03 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method retried="true" signature="createEnquiryTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:04 IST" name="createEnquiryTest" finished-at="2025-09-21T23:47:05 IST" duration-ms="943" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Enquiry is not successfully created expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Enquiry is not successfully created expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tekpyramid.tms.userTest.CreateEnquiryTest.createEnquiryTest(CreateEnquiryTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEnquiryTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:05 IST" name="configAM" finished-at="2025-09-21T23:47:05 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:05 IST" name="configBM" finished-at="2025-09-21T23:47:07 IST" duration-ms="2475" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method retried="true" signature="createEnquiryTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:07 IST" name="createEnquiryTest" finished-at="2025-09-21T23:47:08 IST" duration-ms="944" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Enquiry is not successfully created expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Enquiry is not successfully created expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tekpyramid.tms.userTest.CreateEnquiryTest.createEnquiryTest(CreateEnquiryTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEnquiryTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:08 IST" name="configAM" finished-at="2025-09-21T23:47:08 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:08 IST" name="configBM" finished-at="2025-09-21T23:47:08 IST" duration-ms="498" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method retried="true" signature="createEnquiryTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:08 IST" name="createEnquiryTest" finished-at="2025-09-21T23:47:09 IST" duration-ms="815" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Enquiry is not successfully created expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Enquiry is not successfully created expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tekpyramid.tms.userTest.CreateEnquiryTest.createEnquiryTest(CreateEnquiryTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEnquiryTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:09 IST" name="configAM" finished-at="2025-09-21T23:47:09 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:09 IST" name="configBM" finished-at="2025-09-21T23:47:10 IST" duration-ms="276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method retried="true" signature="createEnquiryTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:10 IST" name="createEnquiryTest" finished-at="2025-09-21T23:47:10 IST" duration-ms="754" status="SKIP">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Enquiry is not successfully created expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Enquiry is not successfully created expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tekpyramid.tms.userTest.CreateEnquiryTest.createEnquiryTest(CreateEnquiryTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEnquiryTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:10 IST" name="configAM" finished-at="2025-09-21T23:47:10 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:10 IST" name="configBM" finished-at="2025-09-21T23:47:11 IST" duration-ms="327" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createEnquiryTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:11 IST" name="createEnquiryTest" finished-at="2025-09-21T23:47:11 IST" duration-ms="861" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Enquiry is not successfully created expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Enquiry is not successfully created expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1590)
+at org.testng.Assert.assertTrue(Assert.java:57)
+at com.tekpyramid.tms.userTest.CreateEnquiryTest.createEnquiryTest(CreateEnquiryTest.java:38)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.retryFailed(TestInvoker.java:269)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:76)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1604)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createEnquiryTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:12 IST" name="configAM" finished-at="2025-09-21T23:47:12 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.userTest.CreateEnquiryTest@16293aa2]" started-at="2025-09-21T23:47:12 IST" name="configAC" finished-at="2025-09-21T23:47:13 IST" duration-ms="1217" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.tekpyramid.tms.userTest.CreateEnquiryTest -->
+      <class name="com.tekpyramid.tms.userTest.CreateBookingTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.userTest.CreateBookingTest@2d7275fc]" started-at="2025-09-21T23:47:41 IST" name="configBC" finished-at="2025-09-21T23:47:44 IST" duration-ms="3422" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateBookingTest@2d7275fc]" started-at="2025-09-21T23:47:44 IST" name="configBM" finished-at="2025-09-21T23:47:48 IST" duration-ms="3212" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createBookingTest()[pri:0, instance:com.tekpyramid.tms.userTest.CreateBookingTest@2d7275fc]" started-at="2025-09-21T23:47:48 IST" name="createBookingTest" finished-at="2025-09-21T23:47:56 IST" duration-ms="8503" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createBookingTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.CreateBookingTest@2d7275fc]" started-at="2025-09-21T23:47:56 IST" name="configAM" finished-at="2025-09-21T23:47:56 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.userTest.CreateBookingTest@2d7275fc]" started-at="2025-09-21T23:47:56 IST" name="configAC" finished-at="2025-09-21T23:47:57 IST" duration-ms="1230" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.tekpyramid.tms.userTest.CreateBookingTest -->
+      <class name="com.tekpyramid.tms.userTest.UserSignUpTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignUpTest@5158b42f]" started-at="2025-09-21T23:47:13 IST" name="configBC" finished-at="2025-09-21T23:47:16 IST" duration-ms="3314" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignUpTest@5158b42f]" started-at="2025-09-21T23:47:16 IST" name="configBM" finished-at="2025-09-21T23:47:20 IST" duration-ms="3420" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="userSignUpTest()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignUpTest@5158b42f]" started-at="2025-09-21T23:47:20 IST" name="userSignUpTest" finished-at="2025-09-21T23:47:22 IST" duration-ms="2320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSignUpTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignUpTest@5158b42f]" started-at="2025-09-21T23:47:22 IST" name="configAM" finished-at="2025-09-21T23:47:22 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.userTest.UserSignUpTest@5158b42f]" started-at="2025-09-21T23:47:22 IST" name="configAC" finished-at="2025-09-21T23:47:23 IST" duration-ms="1215" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.tekpyramid.tms.userTest.UserSignUpTest -->
+      <class name="com.tekpyramid.tms.adminTest.ManageTourPackageTest">
+        <test-method is-config="true" signature="configBC()[pri:0, instance:com.tekpyramid.tms.adminTest.ManageTourPackageTest@222545dc]" started-at="2025-09-21T23:46:27 IST" name="configBC" finished-at="2025-09-21T23:46:30 IST" duration-ms="3519" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBC -->
+        <test-method is-config="true" signature="configBM()[pri:0, instance:com.tekpyramid.tms.adminTest.ManageTourPackageTest@222545dc]" started-at="2025-09-21T23:46:30 IST" name="configBM" finished-at="2025-09-21T23:46:35 IST" duration-ms="4542" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configBM -->
+        <test-method signature="createTourPackageTest()[pri:0, instance:com.tekpyramid.tms.adminTest.ManageTourPackageTest@222545dc]" started-at="2025-09-21T23:46:35 IST" name="createTourPackageTest" finished-at="2025-09-21T23:46:40 IST" duration-ms="4753" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createTourPackageTest -->
+        <test-method is-config="true" signature="configAM()[pri:0, instance:com.tekpyramid.tms.adminTest.ManageTourPackageTest@222545dc]" started-at="2025-09-21T23:46:40 IST" name="configAM" finished-at="2025-09-21T23:46:40 IST" duration-ms="1" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAM -->
+        <test-method is-config="true" signature="configAC()[pri:0, instance:com.tekpyramid.tms.adminTest.ManageTourPackageTest@222545dc]" started-at="2025-09-21T23:46:40 IST" name="configAC" finished-at="2025-09-21T23:46:41 IST" duration-ms="1258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- configAC -->
+      </class> <!-- com.tekpyramid.tms.adminTest.ManageTourPackageTest -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>

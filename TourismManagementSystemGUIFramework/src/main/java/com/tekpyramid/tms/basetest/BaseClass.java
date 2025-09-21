@@ -14,7 +14,6 @@ import org.testng.annotations.BeforeSuite;
 
 import com.tekpyramid.tms.generic.fileutility.ExcelUtility;
 import com.tekpyramid.tms.generic.fileutility.FileUtility;
-import com.tekpyramid.tms.generic.listenerutility.ListenerImpClass;
 import com.tekpyramid.tms.generic.webdriverutility.JavaUtility;
 import com.tekpyramid.tms.generic.webdriverutility.UtilityClassObject;
 import com.tekpyramid.tms.generic.webdriverutility.WebDriverUtility;
@@ -29,12 +28,12 @@ public class BaseClass {
 	public WebDriver driver = null;
 	public static WebDriver sDriver = null;
 	
-	@BeforeSuite
+	@BeforeSuite(groups = {"smoke", "integration", "endToEnd"})
 	public void configBS() throws IOException {
 		System.out.println("=====Connect to DB, Report Config====");
 	}
 	
-	@BeforeClass
+	@BeforeClass(groups = {"smoke", "integration", "endToEnd"})
 	public void configBC() throws IOException {
 		System.out.println("=====Launch the Browser====");
 		String BROWSER = System.getProperty("browser", fLib.getDataFromPropertyFile("browser"));
@@ -49,24 +48,24 @@ public class BaseClass {
 		UtilityClassObject.setDriver(driver);
 	}
 	
-	@BeforeMethod
+	@BeforeMethod(groups = {"smoke", "integration", "endToEnd"})
 	public void configBM() throws IOException {
 		System.out.println("====Open URL====");
 		driver.get(System.getProperty("url", fLib.getDataFromPropertyFile("url")));
 		wLib.waitForPageToLoad(driver);
 	}
 	
-	@AfterMethod
+	@AfterMethod(groups = {"smoke", "integration", "endToEnd"})
 	public void configAM() {
 	}
 	
-	@AfterClass
+	@AfterClass(groups = {"smoke", "integration", "endToEnd"})
 	public void configAC() {
 		System.out.println("====Close the Browser====");
 		driver.quit();
 	}
 	
-	@AfterSuite
+	@AfterSuite(groups = {"smoke", "integration", "endToEnd"})
 	public void configAS() {
 		System.out.println("====Close DB, Report Backup====");
 	}

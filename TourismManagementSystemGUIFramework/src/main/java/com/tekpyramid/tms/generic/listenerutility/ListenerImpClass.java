@@ -25,7 +25,7 @@ public class ListenerImpClass implements ISuiteListener, ITestListener {
 	
 	public void onStart(ISuite suite) {
 		System.out.println("Report configuration");
-		spark = new ExtentSparkReporter("/AdvanceRepot/report.html");
+		spark = new ExtentSparkReporter("./AdvanceRepot/report.html");
 		spark.config().setDocumentTitle("TMS TestSuite Results");
 		spark.config().setReportName("TMS Report");
 		spark.config().setTheme(Theme.DARK);
@@ -55,12 +55,10 @@ public class ListenerImpClass implements ISuiteListener, ITestListener {
 	public void onTestFailure(ITestResult result) {
 		String testName = result.getMethod().getMethodName();
 		TakesScreenshot ts = (TakesScreenshot) BaseClass.sDriver;
-		
 		String time = new Date().toString().replace(" ", "_").replace(":", "_");
-		
 		String srcFile = ts.getScreenshotAs(OutputType.BASE64);
-			test.addScreenCaptureFromPath(srcFile, testName+"_" + time);
-			test.log(Status.INFO, result.getMethod().getMethodName() + "===FAILED===");
+		test.addScreenCaptureFromPath(srcFile, testName+"_" + time);
+		test.log(Status.INFO, result.getMethod().getMethodName() + "===FAILED===");
 	}
 	
 

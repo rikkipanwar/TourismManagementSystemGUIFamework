@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -17,6 +18,8 @@ public class UserSignUpTest extends BaseClass {
 	
 	@Test(groups = "smoke" , retryAnalyzer = com.tekpyramid.tms.generic.listenerutility.RetryListenerImp.class)
 	public void userSignUpTest() throws EncryptedDocumentException, IOException {
+		String expectedMsg = "successful";
+		
 		String FULLNAME = eLib.getDataFromExcel("signup", 1, 0);
 		String MOBNO = eLib.getDataFromExcel("signup", 1, 1);
 		String EMAIL = eLib.getDataFromExcel("signup", 1, 2) + jLib.getRandomNumber();
@@ -31,11 +34,15 @@ public class UserSignUpTest extends BaseClass {
 		WebElement info = driver.findElement(By.xpath("//h4[text()='  Info successfully submited ']"));
 		wLib.waitForElementPresent(driver, info);
 		String confirmMsg = info.getText();
-		if(confirmMsg.contains("successful")) {
-			UtilityClassObject.getTest().log(Status.PASS, "New user is successfully created");
-		}else {
-			UtilityClassObject.getTest().log(Status.FAIL, "New user is not successfully created");
-		}
+		
+		try {
+	        Assert.assertTrue(confirmMsg.contains(expectedMsg), "New user is not successfully created");
+	        UtilityClassObject.getTest().log(Status.PASS, "New user is successfully created");
+	    } catch (AssertionError e) {
+	        UtilityClassObject.getTest().log(Status.FAIL, e.getMessage());
+	        throw e;
+	    }
+		
 	}
 
 }

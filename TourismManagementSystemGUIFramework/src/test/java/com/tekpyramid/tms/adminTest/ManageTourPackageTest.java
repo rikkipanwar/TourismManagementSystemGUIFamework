@@ -4,6 +4,7 @@ import java.io.IOException;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -18,6 +19,8 @@ public class ManageTourPackageTest extends BaseClass{
 	
 	@Test(groups = "smoke" , retryAnalyzer = com.tekpyramid.tms.generic.listenerutility.RetryListenerImp.class)
 	public void createTourPackageTest() throws IOException, InterruptedException {
+		String expectedMsg = "Package Updated";
+		
 		String USERNAME = fLib.getDataFromPropertyFile("admin_username");
 		String PASSWORD = fLib.getDataFromPropertyFile("admin_password");
 		
@@ -41,12 +44,15 @@ public class ManageTourPackageTest extends BaseClass{
 		UpdatePackagesPage upp = new UpdatePackagesPage(driver);
 		upp.updatePackage(PACKAGETYPE, PACKAGEPRICE);
 		
-		String header = driver.findElement(By.xpath("//div[@class='succWrap']")).getText();
-		if(header.contains("Package Updated")) {
-			UtilityClassObject.getTest().log(Status.PASS, "Package is updated successfully");
-		} else {
-			UtilityClassObject.getTest().log(Status.FAIL, "Package is not updated successfully");
-		}
+		String actualMsg = driver.findElement(By.xpath("//div[@class='succWrap']")).getText();
+
+		try {
+	        Assert.assertTrue(actualMsg.contains(expectedMsg), "Package is not updated successfully");
+	        UtilityClassObject.getTest().log(Status.PASS, "Package is updated successfully");
+	    } catch (AssertionError e) {
+	        UtilityClassObject.getTest().log(Status.FAIL, e.getMessage());
+	        throw e;
+	    }
 		
 		adp.logoutAdmin();
 		alp.getBackToHomeLnk().click();

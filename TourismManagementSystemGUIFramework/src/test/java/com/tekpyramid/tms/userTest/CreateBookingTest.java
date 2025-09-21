@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -19,6 +20,7 @@ public class CreateBookingTest extends BaseClass {
 	
 	@Test(groups = "smoke" , retryAnalyzer = com.tekpyramid.tms.generic.listenerutility.RetryListenerImp.class)
 	public void createBookingTest() throws EncryptedDocumentException, IOException, InterruptedException {
+		String expectedMsg = "Booked Successfully";
 		
 		String USERNAME = eLib.getDataFromExcel("signin", 1, 0);
 		String PASSWORD = eLib.getDataFromExcel("signin", 1, 1);
@@ -42,12 +44,15 @@ public class CreateBookingTest extends BaseClass {
 		PackageDetailsPage pdp = new PackageDetailsPage(driver);
 		pdp.bookPackage(FROMDATE, TODATE, COMMENT);
 		
-		String header = driver.findElement(By.xpath("//div[@class='succWrap']")).getText();
-		if(header.contains("Booked Successfully")) {
-			UtilityClassObject.getTest().log(Status.PASS, "Booking is successfully created");
-		} else {
-			UtilityClassObject.getTest().log(Status.FAIL, "Booking is not successfully created");
-		}
+		String actualMsg = driver.findElement(By.xpath("//div[@class='succWrap']")).getText();
+		
+		try {
+	        Assert.assertTrue(actualMsg.contains(expectedMsg), "Booking is not successfully created");
+	        UtilityClassObject.getTest().log(Status.PASS, "Booking is successfully created");
+	    } catch (AssertionError e) {
+	        UtilityClassObject.getTest().log(Status.FAIL, e.getMessage());
+	        throw e;
+	    }
 		
 		uhp.getLogoutLnk().click();
 		

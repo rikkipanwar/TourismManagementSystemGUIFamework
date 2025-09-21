@@ -5,6 +5,7 @@ import java.io.IOException;
 import org.apache.poi.EncryptedDocumentException;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 import org.testng.annotations.Test;
 
 import com.aventstack.extentreports.Status;
@@ -19,6 +20,8 @@ public class UserSignupAndLoginTest extends BaseClass {
 	
 	@Test(groups = "integration" , retryAnalyzer = com.tekpyramid.tms.generic.listenerutility.RetryListenerImp.class)
 	public void userSignupAndLoginTest() throws EncryptedDocumentException, IOException {
+		String expectedMsg = "successful";
+		
 		String FULLNAME = eLib.getDataFromExcel("signup", 1, 0);
 		String MOBNO = eLib.getDataFromExcel("signup", 1, 1);
 		String EMAIL = eLib.getDataFromExcel("signup", 1, 2) + jLib.getRandomNumber();
@@ -33,11 +36,14 @@ public class UserSignupAndLoginTest extends BaseClass {
 		WebElement info = driver.findElement(By.xpath("//h4[text()='  Info successfully submited ']"));
 		wLib.waitForElementPresent(driver, info);
 		String confirmMsg = info.getText();
-		if(confirmMsg.contains("successful")) {
-			UtilityClassObject.getTest().log(Status.PASS, "New user is successfully created");
-		}else {
-			UtilityClassObject.getTest().log(Status.FAIL, "New user is not successfully created");
-		}
+		
+		try {
+	        Assert.assertTrue(confirmMsg.contains(expectedMsg), "New user is not successfully created");
+	        UtilityClassObject.getTest().log(Status.PASS, "New user is successfully created");
+	    } catch (AssertionError e) {
+	        UtilityClassObject.getTest().log(Status.FAIL, e.getMessage());
+	        throw e;
+	    }
 		
 
 		HomePage hp1 = new HomePage(driver);
@@ -46,13 +52,15 @@ public class UserSignupAndLoginTest extends BaseClass {
 		SignInPage sip1 = new SignInPage(driver);
 		sip1.loginAsUser(EMAIL, PASSWORD);
 		
-		String header = driver.findElement(By.xpath("//li[@class='sig']")).getText();
-		if(header.contains(EMAIL)) {
-			UtilityClassObject.getTest().log(Status.PASS, "New user is logged In");
-		}else {
-			UtilityClassObject.getTest().log(Status.FAIL, "New user is not logged In");
-			
-		}
+		String actualMsg = driver.findElement(By.xpath("//li[@class='sig']")).getText();
+		
+		try {
+	        Assert.assertTrue(actualMsg.contains(EMAIL), "New user is not logged In");
+	        UtilityClassObject.getTest().log(Status.PASS, "New user is logged In");
+	    } catch (AssertionError e) {
+	        UtilityClassObject.getTest().log(Status.FAIL, e.getMessage());
+	        throw e;
+	    }
 		
 		UserHomePage uhp = new UserHomePage(driver);
 		uhp.getLogoutLnk().click();

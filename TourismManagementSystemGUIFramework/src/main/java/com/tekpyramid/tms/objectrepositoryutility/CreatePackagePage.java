@@ -77,6 +77,7 @@ public class CreatePackagePage extends BaseClass{
 			getPackagePriceEdt().sendKeys(pPrice);
 			getPackageFeaturesEdt().sendKeys(pFeatures);
 			getPackageDetailsEdt().sendKeys(pDetails);
+			wLib.elementIntoView(driver, getPackageImageBtn());
 			getPackageImageBtn().sendKeys(pImage);
 			wLib.waitForElementClickable(driver, getCreateBtn());
 			getCreateBtn().click();
